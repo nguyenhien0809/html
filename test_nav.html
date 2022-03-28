@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\main.css">
+    <link rel="stylesheet" href="css\style_sm.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>a</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <ul class="ul_main">
+                <li class="li_icBars" onclick="ShowNav()"><i class="fa fa-bars" aria-hidden="true"></i></li>
+                <ul class="ul_chuc_nang_h" id="ul_chuc_nang">
+                    <li><a href="http://127.0.0.1:5500/html_css/html/"><i class="fa fa-home" aria-hidden="true"></i>Trang chủ</a></li>
+                    <li class="danh_muc" onclick="showDanh_muc()"><a><i class="fa fa-book" aria-hidden="true"></i>Danh mục</a></li>
+                    
+                    <ul class="ul_danh_muc" id="ul_danh_muc">
+                        <li><a href="#dien_thoai"><i class="fa fa-mobile fa-lg" aria-hidden="true"></i>Điện Thoại</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-laptop" aria-hidden="true"></i>Máy tính</a></li>
+                        <li><a href="#"><i class="fa fa-spinner" aria-hidden="true"></i>Khác</a></li>
+                    </ul>
+                    
+                    <li><a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Thông tin</a></li>
+                    <li><a href="#" onclick="showSearch()"><i class="fa fa-search" aria-hidden="true"></i>Tìm kiếm</a></li>
+                </ul>     
+            </ul>
+
+            
+            
+            <ul class="btn-login" style="display: none;">
+                <li class="dang_nhap"><a href="#sign_in" onclick="show_tb_login()"><i class="fa fa-sign-in" aria-hidden="true"></i>Đăng nhập</a></li>
+                <li class="dang_ky"><a href="#sign_up" onclick="show_tb_login()"><i class="fa fa-user-circle" aria-hidden="true"></i>Đăng ký</a></li>
+            </ul>
+            <ul class="User" >
+                <ul class="gio_hang">
+                    <li><h5 style="color: red;">0</h5></li>
+                    <li><a href="#" style="margin-left: unset;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ Hàng</a></li>
+                </ul>
+                <li class="danh_muc">
+                    <a onclick="showMenu_User()"><i class="fa fa-user-circle" aria-hidden="true"></i>Người dùng</a>
+                    <ul class="User_info" id="User_info">
+                        <li class="thong_tin_user">
+                            <a href="#"><i class="fa fa-address-card-o" aria-hidden="true"></i>Thông tin</a></li>
+                        <li class="dang_xuat">
+                            <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Đăng Xuất</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+    </header>
+
+    <script src="javaScript\sc.js"></script>
+</body>
+</html>
